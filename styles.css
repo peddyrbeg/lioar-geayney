@@ -1,0 +1,27 @@
+body {
+	font-family: 'ABeeZee', sans-serif !important;
+}
+
+h1 {
+	color:  #73AD21 !important;
+}
+
+.panel {
+	position: relative;
+	min-height:  1080px;
+	padding:  1%;
+}
+
+.dict + .tooltip > .tooltip-inner {
+	background-color: #73AD21;
+	color: #FFFFFF;
+	border: 1px solid green;
+	padding: 4px;
+	font-size: 16px;
+}
+
+ol {
+	font-size: 18px;
+	list-style-position: inside;
+	padding:  2%;
+}
