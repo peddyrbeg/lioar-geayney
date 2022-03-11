@@ -1,14 +1,27 @@
 body {
 	font-family: 'ABeeZee', sans-serif !important;
+	overflow-x: hidden;
+	overscroll-behaviour:  none;
 }
 
 h1 {
 	color:  #73AD21 !important;
 }
 
+.container-fluid {
+	overscroll-behavior: none;
+	width: 600%;
+	height: 100%;
+	display: flex;
+	flex-wrap:  nowrap;
+}
+
 .panel {
 	position: relative;
 	padding:  1%;
+	width:  1000px;
+	height:  900px;
+	
 }
 
 .dict + .tooltip > .tooltip-inner {
