@@ -3,7 +3,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: hidden;
 	overscroll-behaviour:  none;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 h1 {
@@ -19,9 +19,8 @@ h1 {
 }
 
 .panel {
-	position: relative;
 	padding:  1%;
-	width:  100vw;
+	min-width:  100vw;
 	height:  100%;
 }
 
