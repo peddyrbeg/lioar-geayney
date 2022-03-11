@@ -1,6 +1,7 @@
 body {
 	font-family: 'ABeeZee', sans-serif !important;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	overscroll-behaviour:  none;
 	height: 100vh;
 }
