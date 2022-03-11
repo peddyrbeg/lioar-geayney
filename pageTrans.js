@@ -2,14 +2,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-gsap.utils.toArray(".panel").forEach((panel, i) => {
-	ScrollTrigger.create({
-		trigger: panel,
-		start: "top top",
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+	xPercent: -100 * (sections.length - 1),
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".container-fluid",
 		pin: true,
-		pinSpacing: false,
-		snap: 1
-	});
-});
+		scrub: 1,
+		snap: 1 / (sections.length - 1),
+		end: () => "+=" + document.querySelector(".container-fluid").offsetWidth
+	}
+})
 
 })
