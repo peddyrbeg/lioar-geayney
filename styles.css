@@ -2,6 +2,7 @@ body {
 	font-family: 'ABeeZee', sans-serif !important;
 	overflow-x: hidden;
 	overscroll-behaviour:  none;
+	height: 100vh;
 }
 
 h1 {
